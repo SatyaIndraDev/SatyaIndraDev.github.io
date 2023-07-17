@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    
+    <!----------------------------navbar-------------------->
+    <nav id="navbar">
+
+        <div id="navchild">
+        
+        
+        
+        <!-- -----------website logo----------- -->
+        <a style="text-decoration: none; color: #FFEE58;" href="index.html">
+            <img id="logo" src="https://i.pinimg.com/originals/91/13/c6/9113c6cdadc27d72b5ab6d392dcaf307.png" alt="">
+        </a>
+        
+        
+        <!-- ------------search input---------- -->
+        
+        <div class="searchbar">
+            <div class="searchbar-wrapper">
+                <div class="searchbar-left">
+                    <div class="search-icon-wrapper">
+                        <span class="search-icon searchbar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="searchbar-center">
+                    <div class="searchbar-input-spacer"></div>
+        
+                    <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" title="Search" role="combobox" placeholder="Search for products">
+                </div>
+        
+               
+            </div>
+        </div>
+        
+        
+        <!--------------------- login text ------       -->
+        <!-- <a style="text-decoration: none;" href="login.html ">
+            <h3 id="logintext">
+                Login
+            </h3>
+        </a> -->
+        
+        
+        <!--------------------- Become a seller text ------       -->
+        
+        <h3 id="sellertext">
+            Become a seller
+        </h3>
+        
+        <!--------------------- More text ------       -->
+        
+        <h3 id="moretext">
+            More
+        </h3>
+        
+        <!-- ------------shop now------------ -->
+        
+        <a href="women-product.html">
+        
+            <button class="cta">
+                <span class="hover-underline-animation"> Shop now </span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                </svg>
+            </button>
+        
+        </a>
+        
+        <!-- -------------cart image------------- -->
+        <a href="cart.html">
+            <img id="cartimg" src="nav-images/cart.png" alt="">
+        </a>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </nav>
+    <!-- ######################****_______-------Header - Endsss__________----------------------************************** -->
+
+
+    <!------------Parent div, will contain 2 divs and flex/grclass property------------------------>
+    <div id="parent">
+
+
+        <!------------------Div1, product details--------------------->
+
+        <div id="child1">
+
+            <div class="address">
+                
+                <div>
+                    <p><span class="num">1</span> Login : <span id="userdeliver"></span> ✅</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile No. :&nbsp;
+                        <span id="userphone"></span>
+                    </p>
+                </div>
+                <div class="btndiv">
+                    <button>Change</button>
+                </div>
+                
+            </div>
+<br>
+            <!-------------Product details, flex property-------------->
+
+            <div class="address">
+                
+                <div>
+                    <p><span class="num">2</span> Delivery Address ✅</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mira Road, Thane, Mumbai, 401104</p>
+                </div>
+                <div class="btndiv">
+                    <button>Change</button>
+                </div>
+                
+            </div>
+            <br>
+            <div  class="address">
+                
+                <div id="ordersum">
+                    <p><span class="num">3</span> Order Summary ✅</p>
+                    
+                </div>
+                
+                
+            </div>
+<br>
+<div class="addres">
+                
+    <div>
+        <p>PAYMENT OPTIONS</p>
+        
+    </div>
+    
+    
+</div>
+
+
+
+            
+            <br>
+            <div class="radio-group">
+                <label class="radio" onclick="displayBlock('pay1')">
+                    <input type="radio" value="sbi" name="options" id="click1"> &nbsp;&nbsp; <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-pay/sbi-7804ae3e.svg" alt=""> &nbsp;&nbsp; State Bank of India Net Banking <span></span>
+                </label>
+                <div class="pay" id="pay1"><button class="pay_btn" onclick="onClick()">PAY ₹ <div class="amount"></div></button></div>
+                <label class="radio" onclick="displayBlock('pay2')">
+                    <input type="radio" value="sbi" name="options" id="click2"> &nbsp;&nbsp; <img src="https://img1a.flixcart.com/linchpin-web/batman-returns/logos/upiLogo6.gif" alt=""> &nbsp;&nbsp; UPI<span></span>
+                </label>
+                <div class="pay" id="pay2"><button class="pay_btn" onclick="onClick()">PAY ₹ <div class="amount"></div></button></div>
+                <label class="radio" onclick="displayBlock('pay3')">
+                    <input type="radio" value="sbi" name="options"  id="click3"> &nbsp;&nbsp; <img src="https://img1a.flixcart.com/www/linchpin/batman-returns/logos/Payments%20Logo%20animation_1.gif" alt=""> &nbsp;&nbsp; Wallets<span></span>
+                </label>
+                <div class="pay" id="pay3"><button class="pay_btn" onclick="onClick()">PAY ₹ <div class="amount"></div></button></div>
+                <label class="radio" onclick="displayBlock('pay4')">
+                    <input type="radio" value="sbi" name="options"  id="click4"> &nbsp;&nbsp; Credit / Debit / ATM Card<span></span>
+                </label>
+                <div class="pay" id="pay4"><button class="pay_btn" onclick="onClick()">PAY ₹ <div class="amount"></div></button></div>
+                <label class="radio" onclick="displayBlock('pay5')">
+                    <input type="radio" value="sbi" name="options" id="click5"> &nbsp;&nbsp; Net Banking<span></span>
+                </label>
+                <div class="pay" id="pay5"><button class="pay_btn" onclick="onClick()">PAY ₹ <div class="amount"></div></button></div>
+                <label class="radio" id="cod" onclick="displayBlock('pay6')">
+                    <input type="radio" value="sbi" name="options"> &nbsp;&nbsp; <div>Cash on Delivery <p class="supercoin"><img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/super-coin_bac003.svg" alt="">&nbsp; Get ₹100 off by using 100 Supercoins with Kotak 811 Debit and slice card.</p></div> <span></span>
+                </label>
+                <div class="pay" id="pay6"><button class="co_btn" onclick="onClickCo()">CONFIRM ORDER</button></div>
+                <label class="radio" id="disable">
+                    <input type="radio" value="sbi" name="options" disabled> &nbsp;&nbsp; <div id="emi">EMI (Easy Installments) <p class="na">Not applicable ?</p></div> <span></span>
+                </label>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+<!-------------child 2 for price details--------->
+
+<div class="child2" style="height:100%">
+
+    <h2>PRICE DETAILS</h2>
+    <hr>
+
+    <div class="child22">
+
+        <div class="price">
+            <p>Price (<span id="pricequant"></span> items) </p>
+            <p id="itemprice"></p>
+            <!-- price of product -->
+        </div>
+
+        
+
+        <div class="delcharge">
+            <p>Delivery Charges </p>
+            <p>₹40 </p>
+            <!-- delivery charges product -->
+        </div>
+        <hr>
+
+        <div class="totalamount">
+            <p>Total Payable </p>
+            <p id="totalprice"></p>
+            <!-- price of product -->
+        </div>
+
+        <hr>
+
+
+        <p style="color:#388e3c">You will save <span id="discprice" >100</span> on this order</p>
+
+        <div class="security"><img style="margin-top: -5px;height: 80%;" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/shield_b33c0c.svg" alt="">Safe and Secure Payments.Easy returns.100% Authentic products.</div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+<br>
+
+
+<!-- ---------Save for Later -->
+
+
+
+
+
+
+
+
+<div id="footer">
+    <div id="fut1">Policies:Returns Policy | Terms of use | Security | Privacy | Infringement &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2007-2021 Shopping Mania.com
+
+    </div>
+    <div id="fut2" >Need help? Visit the<span style="color:#2874F0"> Help Center</span> or <span  style="color:#2874F0">Contact Us</span></div>
+</div>
+
+
+
+
+
+
+</body>
+<script src="order.js"></script>
+</html>
+
+

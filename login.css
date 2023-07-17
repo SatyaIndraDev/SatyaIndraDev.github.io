@@ -1,0 +1,148 @@
+*{
+  font-family: Roboto, Arial, sans-serif;
+}
+
+#container {
+    width: 92%;
+    margin: auto;
+padding-left: 100px;
+padding-top: 10px;
+    
+height: 70vh;
+justify-content: center;
+align-items: center;
+background: url(loggin.jpg);
+background-position:center ;
+background-size: cover;
+  }
+  #container > div {
+    display: flex;
+    gap: 10px;
+    justify-content:end;
+
+  
+
+  }
+  form {
+    margin: auto;
+    
+margin-top: 100px;
+
+    height: 60%;
+    width: 100%;
+    max-width:200px;
+    background: rgba(0,0,0,0.5);
+    padding: 28px;
+    margin: 0px 28px;
+    border-radius: 10px;
+    box-shadow: inset  -2px 2px 2px white;
+    color: #fcdcdc;
+
+
+  }
+  input {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+
+  }
+  .signin{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(180, 156, 124);
+    color: white;
+  }
+  .signup{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(180, 156, 124);
+    color: white;
+  }
+
+   /* -----------------------------------------foooter-------------------------- */
+#footer{
+  /* margin-top: 50px; */
+}
+#footer > #footera{
+display:grid ;
+grid-template-columns: repeat(6,1fr);
+font-size: 15px;
+background-color: #020f20;
+color: whitesmoke;
+padding-top: 40px;
+padding-left: 80px;
+height: 300px;
+margin-top: 10px;
+}
+#footer > #footerb{
+display: flex;
+/* justify-content: ; */
+}
+#footerba{
+  padding: 20px;
+}
+
+#footerbb{
+  display: flex;
+  justify-content: right;
+  width: 50%;
+ padding-left: 10px;
+}
+
+/* login admin button */
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  margin-top: 200px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+  cursor: pointer;
+ }
+ 
+ .cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+ }
+ 
+ .cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+ }
+ 
+ .cssbuttons-io::before,
+ .cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ }
+ 
+ .cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ .cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+ }
+ 
+ .cssbuttons-io:active {
+  transform: scale(0.95);
+ }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin_login.css">
+</head>
+<body>
+    <div class="div1">
+
+
+        <p>User name</p>
+        <input id="username" type="text" placeholder="user name enter-test1" />
+
+        <p>Password</p>
+        <input id="Password" type="text" placeholder="Password enter-test@1" />
+
+        <button id="yes">LOGIN</button>
+    </div>
+<!-- -------------------------foooter------------------- -->
+    <div id="footer">
+        <div id="footera">
+            <div>MY ACCOUNT</div>
+            <div>LET US HELP</div>
+            <div>INFORMATION</div>
+            <div>MORE</div>
+            <div>Returns</div>
+            <div>Shipping </div>
+            <div>About</div>
+            <div>Tips & Ideas</div>
+            <div>Return Policy</div>
+            <div>International</div>
+            <div>Investor</div>
+            <div>Careers</div>
+            <div>Contact Us</div>
+            <div>Clearance</div>
+            <div>New Arrivals</div>
+            <div>FAQ</div>
+            <div>Accessibility</div>
+            <div>Account Settings</div>
+            <div>Email Preferences</div>
+            <div>Deals</div>
+            <div></div>
+            </div>
+        <div id="footerb">
+            <div id="footerba">© Copyright 2023, Shopping-Mania.com®, Inc.799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</div>
+            <div id="footerbb">
+                <h3>Privacy Policy</h3>
+                <h3>Terms & Conditions</h3>
+                <h3>*Promotion Terms</h3>
+            </div>
+        </div>
+        </div>
+
+</body>
+</html>
+<script>
+  
+document.querySelector("#yes").addEventListener("click",goa)
+
+function goa(){
+    let x=document.querySelector("#username").value
+
+let y=document.querySelector("#Password").value
+if(x=="test1" && y=="test@1" ){
+    alert("login successful")
+    window.location.href="adminhome.html"
+}else{alert("wrong credentials")}
+}
+
+
+</script>

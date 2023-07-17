@@ -1,1 +1,0 @@
-# SatyaIndraDev.github.io

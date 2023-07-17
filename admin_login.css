@@ -1,0 +1,70 @@
+*{
+  font-family: Roboto, Arial, sans-serif;
+}
+.div1 {
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* width: 37%; */
+    height: 40vh;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: url(admin\ \(3\).jfif);
+background-position:center ;
+background-size: cover;
+color: white;
+}
+#username{
+    border-radius: 5px;
+    border: none; 
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+}
+#Password{
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+}
+#yes{
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(122, 59, 180);
+    height: 25px;
+    padding: 5px;
+}
+
+ /* -----------------------------------------foooter-------------------------- */
+ #footer{
+    margin-top: 50px;
+  }
+  #footer > #footera{
+  display:grid ;
+  grid-template-columns: repeat(6,1fr);
+  font-size: 15px;
+  background-color: #020f20;
+  color: whitesmoke;
+  padding-top: 40px;
+  padding-left: 80px;
+  height: 300px;
+  margin-top: 10px;
+  }
+  #footer > #footerb{
+  display: flex;
+  /* justify-content: ; */
+  }
+  #footerba{
+    padding: 20px;
+  }
+  
+  #footerbb{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+   padding-left: 10px;
+  }

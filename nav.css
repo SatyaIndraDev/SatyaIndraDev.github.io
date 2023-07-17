@@ -1,0 +1,238 @@
+*{
+    font-family: Roboto, Arial, sans-serif;
+    
+}
+.logout:hover{
+  cursor: pointer;
+}
+#navbar{
+
+    width: 100%;
+    /* border: solid; */
+    height: 60px;
+    
+    
+    background: linear-gradient(120deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   
+}
+#navchild{
+    /* border: solid; */
+    height: 60px;
+    background: linear-gradient(deg,#2b97e6,#f441a5,#ffeb3b,#1db0e0);
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+#logo{
+  height: 51px;
+  width: 100px;
+  cursor: pointer;
+  margin-top: 6px;
+
+}
+.searchbar {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: white;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    /* margin: 0 auto; */
+    margin-top: 5px;
+    width: 300px;
+    /* max-width: 224px; */
+  }
+  
+  .searchbar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+  }
+  
+  .searchbar-wrapper {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+  }
+  
+  .searchbar-left {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+  }
+  
+  .search-icon-wrapper {
+    margin: auto;
+  }
+  
+  .search-icon {
+    margin-top: 3px;
+    color: #9aa0a6;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+  }
+  
+  .searchbar-icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .searchbar-center {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  
+  .searchbar-input-spacer {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+    font-size: 16px;
+  }
+  
+  .searchbar-input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .searchbar-right {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row
+  }
+  
+  .searchbar-clear-icon {
+    margin-right: 12px
+  }
+  
+ #logintext{
+    /* color: white; */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+ }
+ #logintext:hover{
+    color: #f44b9e;
+    transform: translateX(5px);
+ }
+ #sellertext{
+    /* color: white; */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+ }
+ #sellertext:hover{
+    color: #9f65c0;
+    transform: translateX(5px);
+ }
+ #moretext{
+    /* color: white; */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+ }
+ #moretext:hover{
+    color: #2eb4d5;
+    transform: translateX(5px);
+ }
+ #cartimg{
+    /* border: solid; */
+    height:30px;
+    margin-top: 13px;
+    cursor: pointer;
+ }
+ #cartimg:hover{
+    /* background-color: white; */
+    
+    transform: translateX(10px);
+ 
+ }
+ .cta {
+  height: 30px;
+  /* border: solid; */
+  background: none;
+  margin-top: 15px;
+  }
+  
+  .cta span {
+    
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+ 
+  
+
+
+
+  
+  
+  
