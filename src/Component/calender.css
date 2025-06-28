@@ -20,6 +20,7 @@
     width: 75%;
     border-radius: 8px;
     margin-bottom: 2%;
+    background: white;
 }
 
 .github-stats {
@@ -28,28 +29,45 @@
     justify-content: space-between;
     align-items: center;
     width: 75%;
-    height: 200px;
+    height: auto;
+    min-height: 200px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 8px;
+    padding: 20px;
+    gap: 20px;
+    background: white;
 }
 
-#github-streak {
-    width: 50%;
-}
-
-#github-language {
-    width: 40%;
-}
-
+#github-streak,
+#github-language,
 #github-streak-status {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
 }
 
-/* meidum screens */
+#github-streak img,
+#github-language img,
+#github-streak-status img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    min-height: unset !important;
+    object-fit: unset !important;
+    background: white;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* medium screens */
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .github-calender {
-        width: 75%;
+        width: 90%;
     }
     .github-stats {
         /* border: 1px solid rgb(255, 5, 5); */
@@ -58,36 +76,43 @@
         gap: 20px;
         justify-content: space-between;
         align-items: center;
-        width: 75%;
+        width: 90%;
         height: auto;
-        box-shadow: none
+        box-shadow: none;
+        padding: 10px;
     }
     #github-streak {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         /* border: 1px solid red; */
         width: 100%;
         margin: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 8px;
+        padding: 15px;
+        background: white;
     }
     #github-language {
         /* border: 1px solid red; */
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
         margin: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 8px;
+        padding: 15px;
+        background: white;
     }
     #github-streak-status {
         /* border: 1px solid red; */
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
         margin: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 8px;
+        padding: 15px;
+        background: white;
     }
 }
 
@@ -95,7 +120,7 @@
 
 @media all and (min-width: 280px) and (max-width: 767px) {
     .github-calender {
-        width: 75%;
+        width: 95%;
     }
     .github-stats {
         display: flex;
@@ -103,35 +128,42 @@
         gap: 20px;
         justify-content: space-between;
         align-items: center;
-        width: 75%;
+        width: 95%;
         height: auto;
-        box-shadow: none
+        box-shadow: none;
+        padding: 10px;
     }
     #github-streak {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         /* border: 1px solid red; */
         width: 100%;
         margin: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 8px;
+        padding: 15px;
+        background: white;
     }
     #github-language {
         /* border: 1px solid red; */
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
         margin: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 8px;
+        padding: 15px;
+        background: white;
     }
     #github-streak-status {
         /* border: 1px solid red; */
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
         margin: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 8px;
+        padding: 15px;
+        background: white;
     }
 }
