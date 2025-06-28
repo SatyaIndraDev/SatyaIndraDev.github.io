@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 
 import Style from './Navbar.module.css';
@@ -53,13 +51,8 @@ const Navbar = () => {
 
 
   const OpenPDF = () => {
-
-    const url = `https://drive.google.com/file/d/1dftS8HpYQ_BqvDxcdJ2SfST7pDqlVybe/view`
-
+    const url = `https://drive.google.com/file/d/1giw2gW8aO5Q_ND0VMRAfdzU8kynmTQQk/view?usp=drive_link`;
     window.open(url, '_blank');
-
-
-
   }
 
 
@@ -98,7 +91,7 @@ const Navbar = () => {
                 </HStack>
 
 
-                <Button onClick = {OpenPDF} id="resume-button-1" _hover = {{background : 'rgb(33, 33, 33)'}} className="nav-link resume" size = {['sm','md']} variant = 'none' bg = '#1A202C' border = '1px solid' boxShadow={'1px 1px 5px'} color = 'white'><ChakraLink id="resume-link-1" isExternal href = 'MohdMaazAnsari-Resume.pdf' download="SatyaIndraDev-Resume.pdf" _hover = {{textDecoration : 'none', borderBottom : '2px solid' , borderColor : 'rgb(224, 247, 250)'}}>Resume</ChakraLink></Button>
+                <Button onClick = {OpenPDF} id="resume-button-1" _hover = {{background : 'rgb(33, 33, 33)'}} className="nav-link resume" size = {['sm','md']} variant = 'none' bg = '#1A202C' border = '1px solid' boxShadow={'1px 1px 5px'} color = 'white'><ChakraLink id="resume-link-1" isExternal href = 'satyaindradev-resume.pdf' download="satyaindradev-resume.pdf" _hover = {{textDecoration : 'none', borderBottom : '2px solid' , borderColor : 'rgb(224, 247, 250)'}}>Resume</ChakraLink></Button>
 
 
 

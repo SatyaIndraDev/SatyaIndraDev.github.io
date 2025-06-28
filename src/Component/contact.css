@@ -13,7 +13,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .contactheading {
@@ -101,7 +101,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .contactheading {

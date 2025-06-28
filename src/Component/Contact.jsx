@@ -21,7 +21,7 @@ const Contact = () => {
 
     <div className="contact-main" id="contact">
       <div className="headingwrapper">
-      <Heading mt = '150px' color = '#1A202C' fontSize={35}><Text as = 'span' color = '#1A202C'>Contact</Text> </Heading>
+      <Heading mt = '30px' color = '#1A202C' fontSize={35}><Text as = 'span' color = '#1A202C'>Contact</Text> </Heading>
         <div className="headingwrapperDiv">
           <div className="headingwrapperDivLeft">
             <img
@@ -37,7 +37,7 @@ const Contact = () => {
               <IoMdCall /> +91-7055280933
             </div>
             <div className="contact-location">
-              <MdLocationOn /> Haldwani, Uttarakhand
+              <MdLocationOn /> Gurgaon, Haryana
             </div>
             <div className="contact-socialLink">
               <img

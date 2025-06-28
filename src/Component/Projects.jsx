@@ -19,6 +19,78 @@ const Responsive_Projects = [
 const non_Responsive_Projects = [
 
   {
+    pc_screenshot : 'buynow.png',
+
+    mobile_screenshot : null,
+
+    title : 'BUY NOW👗👖',
+
+    clone : 'clone : koovs',
+
+    description : 'It is a global luxury fashion online marketplace that connects customers with a curated selection of products from a network of independent luxury boutiques and designer brands.',
+
+    tech_stack : [
+      {skill : 'React.png', w : '25px'},
+      {skill : 'express-js.png', w : '25px'},
+      {skill : 'Node js.png', w : '25px'},
+      {skill : 'Mongo db.png', w : '25px'}
+    ],
+
+    netlify : 'https://buynow2.vercel.app/',
+
+    github : 'https://github.com/SatyaIndraDev/BUY-NOW',
+
+    isOnGithub : true
+  },
+  {
+    pc_screenshot : 'foodparadise.png',
+
+    mobile_screenshot : null,
+
+    title : 'Foodies Paradise 🍔🍕',
+
+    // clone : 'clone : koovs',
+
+    description : 'Architected Foodies Paradise, an innovative e-commerce platform set to redefine online grocery shopping. Designed a user-friendly interface for seamless navigation, facilitating easy exploration of an extensive product range. Streamlined the shopping experience, allowing users to effortlessly add items to their cart and relish doorstep convenience',
+
+    tech_stack : [
+      {skill : 'React.png', w : '25px'},
+      {skill : 'express-js.png', w : '25px'},
+      {skill : 'Node js.png', w : '25px'},
+      {skill : 'Mongo db.png', w : '25px'}
+    ],
+
+    netlify : 'https://foodies-paradise.vercel.app/',
+
+    github : 'https://github.com/SatyaIndraDev/Food-Paradise',
+
+    isOnGithub : true
+  },
+  {
+    pc_screenshot : 'gardenease.png',
+
+    mobile_screenshot : null,
+
+    title : 'Garden Ease 🌱🌿',
+
+    clone : 'clone : My Garden',
+
+    description : 'Welcome to our vibrant online community dedicated to all things gardening! Our Garden Enthusiasts Haven is a place where green thumbs, budding gardeners, and outdoor enthusiasts come together to share their passion for cultivating natures beauty.',
+
+    tech_stack : [
+      {skill : 'React.png', w : '25px'},
+      {skill : 'express-js.png', w : '25px'},
+      {skill : 'Node js.png', w : '25px'},
+      {skill : 'Mongo db.png', w : '25px'}
+    ],
+
+    netlify : 'http://gardenease.vercel.app/',
+
+    github : 'https://github.com/SatyaIndraDev/Garden-Ease',
+
+    isOnGithub : true
+  },
+  {
     pc_screenshot : 'flipkart.png',
 
     mobile_screenshot : null,
@@ -38,29 +110,7 @@ const non_Responsive_Projects = [
     isOnGithub : true
   
 
-  },
-
-
-  {
-    pc_screenshot : 'buynow.png',
-
-    mobile_screenshot : null,
-
-    title : 'BUY NOW👗👖',
-
-    clone : 'clone : koovs',
-
-    description : 'It is a global luxury fashion online marketplace that connects customers with a curated selection of products from a network of independent luxury boutiques and designer brands.',
-
-    tech_stack : [{skill : 'HTML.png', w : '20px'},{skill : 'CSS.png', w  : '25px'}, { skill : 'Chakra ui.png', w : '25px'}, {skill : 'React.png', w : '25px'},{skill : 'react-router.png', w : '25px'}],
-
-    netlify : 'https://superb-sunshine-b73a4b.netlify.app/',
-
-    github : 'https://github.com/SatyaIndraDev/golden-oven-671-/tree/main/my-app',
-
-    isOnGithub : true
   }
-  ,
 
 ]
 
@@ -69,11 +119,11 @@ const non_Responsive_Projects = [
 
 const Projects = () => {
   return (
-    <Box  pb = '100px' border="2px solid rgb(224, 242, 241)" mt="90px" id="projects" >
+    <Box  pb = '100px' border="2px solid rgb(224, 242, 241)" mt="40px" id="projects" >
 
       {/* green border to below box */}
 
-            <Box mt = '110px'>
+            <Box mt = '30px'>
 
             <Heading color = '#1A202C;' fontSize={35}> <Text as = 'span' color = '#1A202C'>My</Text> Projects</Heading>
 
@@ -127,11 +177,11 @@ const Projects = () => {
 
                                         <HStack mt = '10px'>
 
-                                            <Link isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '50px' src = 'Netlify logo.png'></Image></Link>
+                                            <Link isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png'></Image></Link>
 
                                             <ExternalLinkIcon zIndex = '2' />
 
-                                            <Link isExternal href = {el.github}><Image bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '30px' src = 'github.png'></Image></Link>
+                                            <Link isExternal href = {el.github}><Image bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '40px' src = 'github.png'></Image></Link>
 
                                             <ExternalLinkIcon zIndex = '2' />
 
@@ -157,11 +207,11 @@ const Projects = () => {
 
                                 <HStack display = {{base : 'none','1349px' : 'flex'}} left = '15%' bottom = '21%' position={'absolute'} >
 
-                                  <Link zIndex = '2' isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '50px' src = 'Netlify logo.png' boxShadow = '2px 2px 10px black'></Image></Link>
+                                  <Link zIndex = '2' isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png' boxShadow = '2px 2px 10px black'></Image></Link>
 
                                   <ExternalLinkIcon  />
 
-                                  <Link zIndex = '2' isExternal href = {el.github} ><Image bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '30px' src = 'github.png' boxShadow = '2px 2px 10px black'></Image></Link>
+                                  <Link zIndex = '2' isExternal href = {el.github} ><Image bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '40px' src = 'github.png' boxShadow = '2px 2px 10px black'></Image></Link>
 
                                   <ExternalLinkIcon  />
 
@@ -214,10 +264,10 @@ const Projects = () => {
 
                                           <HStack mt = '10px'>
 
-                                              <Link className="project-deployed-link" isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '50px' src = 'Netlify logo.png'></Image></Link>
+                                              <Link className="project-deployed-link" isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png'></Image></Link>
 
 
-                                              <Link className = "project-github-link" isExternal href = {el.github}><Image borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}}  w = '30px' src = 'github.png'></Image></Link>
+                                              <Link className = "project-github-link" isExternal href = {el.github}><Image borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}}  w = '40px' src = 'github.png'></Image></Link>
 
                                              
 
@@ -295,11 +345,11 @@ const Projects = () => {
 
                                         <HStack mt = '10px'>
 
-                                            <Link isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '50px' src = 'Netlify logo.png'></Image></Link>
+                                            <Link isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png'></Image></Link>
 
                                             <ExternalLinkIcon zIndex = '2' />
 
-                                            <Link isExternal href = {el.github}><Image visibility = {el.isOnGithub ?'visible' : 'hidden'}  borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}} w = '30px' src = 'github.png'></Image></Link>
+                                            <Link isExternal href = {el.github}><Image visibility = {el.isOnGithub ?'visible' : 'hidden'}  borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}} w = '40px' src = 'github.png'></Image></Link>
 
                                             <ExternalLinkIcon visibility = {el.isOnGithub ?'visible' : 'hidden'}  zIndex = '2' />
 
@@ -325,11 +375,11 @@ const Projects = () => {
 
                                 <HStack display = {{base : 'none','1349px' : 'flex'}} left = '15%' bottom = '21%' position={'absolute'} >
 
-                                  <Link zIndex = '2' isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '50px' src = 'Netlify logo.png' boxShadow = '2px 2px 10px black'></Image></Link>
+                                  <Link zIndex = '2' isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png' boxShadow = '2px 2px 10px black'></Image></Link>
 
                                   <ExternalLinkIcon  />
 
-                                  <Link zIndex = '2' isExternal href = {el.github} ><Image visibility = {el.isOnGithub ?'visible' : 'hidden'}  bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '30px' src = 'github.png' boxShadow = '2px 2px 10px black'></Image></Link>
+                                  <Link zIndex = '2' isExternal href = {el.github} ><Image visibility = {el.isOnGithub ?'visible' : 'hidden'}  bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '40px' src = 'github.png' boxShadow = '2px 2px 10px black'></Image></Link>
 
                                   <ExternalLinkIcon visibility = {el.isOnGithub ?'visible' : 'hidden'}   />
 
@@ -382,10 +432,10 @@ const Projects = () => {
 
                                           <HStack mt = '10px'>
 
-                                              <Link className="project-deployed-link" isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '50px' src = 'Netlify logo.png'></Image></Link>
+                                              <Link className="project-deployed-link" isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png'></Image></Link>
 
 
-                                              <Link className = "project-github-link" isExternal href = {el.github}><Image visibility = {el.isOnGithub ?'visible' : 'hidden'} borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}} w = '30px' src = 'github.png'></Image></Link>
+                                              <Link className = "project-github-link" isExternal href = {el.github}><Image visibility = {el.isOnGithub ?'visible' : 'hidden'} borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}} w = '40px' src = 'github.png'></Image></Link>
 
                                            
 
