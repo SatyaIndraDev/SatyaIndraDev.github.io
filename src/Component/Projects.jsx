@@ -18,6 +18,7 @@ const Responsive_Projects = [
 
 const non_Responsive_Projects = [
 
+ 
   {
     pc_screenshot : 'buynow.png',
 
@@ -87,6 +88,31 @@ const non_Responsive_Projects = [
     netlify : 'http://gardenease.vercel.app/',
 
     github : 'https://github.com/SatyaIndraDev/Garden-Ease',
+
+    isOnGithub : true
+  },
+
+  {
+    pc_screenshot : 'dribble.png',
+
+    mobile_screenshot : null,
+
+    title : 'Dribbble Mania 🎨',
+
+    clone : 'clone : Dribbble',
+
+    description : 'Dribbble Mania is a clone of Dribble. Dribble is an California, United States website which discover designs, illustrations, and graphic elements from the world\'s best designers.',
+
+    tech_stack : [
+      {skill : 'React.png', w : '25px'},
+      {skill : 'express-js.png', w : '25px'},
+      {skill : 'Node js.png', w : '25px'},
+      {skill : 'Mongo db.png', w : '25px'}
+    ],
+
+    netlify : 'http://rainbow-paletas-336e0e.netlify.app/',
+
+    github : 'https://github.com/SatyaIndraDev/Dribble',
 
     isOnGithub : true
   },
