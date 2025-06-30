@@ -231,20 +231,7 @@ const Projects = () => {
 
                                   <Image  id = {style['Project-scr']} top = {{'base' : '5.6%','848px' : '22%' ,'1349px' :'16.4%'}} left = {{base : '12%','371px' : '13%','496px' : '14%','848px' : '23.2%','1011px' : '23.5%','1349px' :'5.1%'}} w = {{base : '70%','848px' : '30.9%'}} position={'absolute'} src = {el.pc_screenshot}></Image>
 
-                                <HStack display = {{base : 'none','1349px' : 'flex'}} left = '15%' bottom = '21%' position={'absolute'} >
-
-                                  <Link zIndex = '2' isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png' boxShadow = '2px 2px 10px black'></Image></Link>
-
-                                  <ExternalLinkIcon  />
-
-                                  <Link zIndex = '2' isExternal href = {el.github} ><Image bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '40px' src = 'github.png' boxShadow = '2px 2px 10px black'></Image></Link>
-
-                                  <ExternalLinkIcon  />
-
-
-                          </HStack>
-
-                          <Box display = {{base : 'block','848px' : 'none'}} h = '30px' mb = '20px'></Box>
+                                <Box display = {{base : 'block','848px' : 'none'}} h = '30px' mb = '20px'></Box>
 
 
                             <Image  zIndex={'2'} w = {{base : '70%','848px' : '20%'}} src = 'Iphone.png'></Image>
@@ -324,7 +311,12 @@ const Projects = () => {
                 {non_Responsive_Projects.map((el) =>
 
                   {
-                  
+                  // Remove links for the laptop project only
+                  const isLaptopProject = el.pc_screenshot === 'Laptop2.png';
+                  // Adjust image position for Foodies Paradise and Garden Ease
+                  const isFoodies = el.title === 'Foodies Paradise 🍔🍕';
+                  const isGarden = el.title === 'Garden Ease 🌱🌿';
+                  const customTop = isFoodies || isGarden ? {base : '22%','848px' : '24.5%' ,'1349px' :'23.4%'} : {base : '16%','848px' : '17.5%' ,'1349px' :'16.4%'};
                   return <GridItem  key = {Math.random()} className="project-card" bg = '#E0EFF8' px = '10px' py = '25px'>
 
 
@@ -370,16 +362,14 @@ const Projects = () => {
 
 
                                         <HStack mt = '10px'>
-
+                                            {!isLaptopProject && (
+                                              <>
                                             <Link isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png'></Image></Link>
-
                                             <ExternalLinkIcon zIndex = '2' />
-
                                             <Link isExternal href = {el.github}><Image visibility = {el.isOnGithub ?'visible' : 'hidden'}  borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}} w = '40px' src = 'github.png'></Image></Link>
-
                                             <ExternalLinkIcon visibility = {el.isOnGithub ?'visible' : 'hidden'}  zIndex = '2' />
-
-
+                                              </>
+                                            )}
                                           </HStack>
 
 
@@ -397,22 +387,9 @@ const Projects = () => {
 
                                   <Image  zIndex={'2'} w = {{'base' : '95%','848px' : '42.4%'}} src = 'Laptop2.png'></Image>
 
-                                  <Image  id = {style['Project-scr']} top = {{'base' : '16%','848px' : '17.5%' ,'1349px' :'16.4%'}} left = {{base : '12%','371px' : '13%','496px' : '14%','848px' : '33.6%','1011px' : '33.8%','1349px' :'5.1%'}} w = {{base : '70%','848px' : '30.9%'}} position={'absolute'} src = {el.pc_screenshot}></Image>
+                                  <Image  id = {style['Project-scr']} top = {customTop} left = {{base : '12%','371px' : '13%','496px' : '14%','848px' : '33.6%','1011px' : '33.8%','1349px' :'5.1%'}} w = {{base : '70%','848px' : '30.9%'}} position={'absolute'} src = {el.pc_screenshot}></Image>
 
-                                <HStack display = {{base : 'none','1349px' : 'flex'}} left = '15%' bottom = '21%' position={'absolute'} >
-
-                                  <Link zIndex = '2' isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png' boxShadow = '2px 2px 10px black'></Image></Link>
-
-                                  <ExternalLinkIcon  />
-
-                                  <Link zIndex = '2' isExternal href = {el.github} ><Image visibility = {el.isOnGithub ?'visible' : 'hidden'}  bg = 'white' _hover = {{cursor : 'pointer'}} borderRadius={'10px'} w = '40px' src = 'github.png' boxShadow = '2px 2px 10px black'></Image></Link>
-
-                                  <ExternalLinkIcon visibility = {el.isOnGithub ?'visible' : 'hidden'}   />
-
-
-                          </HStack>
-
-                          <Box display = {{base : 'block','848px' : 'none'}} h = '30px' mb = '20px'></Box>
+                                <Box display = {{base : 'block','848px' : 'none'}} h = '30px' mb = '20px'></Box>
 
 
                             {/* <Image visibility = {el.isResponsive ? 'visible' : 'hidden'} zIndex={'2'} w = {{base : '70%','848px' : '20%'}} src = 'Iphone.png'></Image>
@@ -457,15 +434,12 @@ const Projects = () => {
 
 
                                           <HStack mt = '10px'>
-
+                                            {!isLaptopProject && (
+                                              <>
                                               <Link className="project-deployed-link" isExternal href = {el.netlify}><Image _hover = {{cursor : 'pointer'}} border = '2px solid' borderRadius={'10px'} bg = 'white' w = '40px' src = 'deploy.png'></Image></Link>
-
-
                                               <Link className = "project-github-link" isExternal href = {el.github}><Image visibility = {el.isOnGithub ?'visible' : 'hidden'} borderRadius = '40px' bg = 'white' _hover = {{cursor : 'pointer'}} w = '40px' src = 'github.png'></Image></Link>
-
-                                           
-
-
+                                              </>
+                                            )}
                                             </HStack>
 
 

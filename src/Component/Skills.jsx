@@ -11,7 +11,7 @@ const Tech_Stack = [
   {img : 'HTML.png', text : 'HTML 5', w : '70px', w2 : '40px' },
   {img : 'CSS.png', text : 'CSS 3', w : '80px', w2 : '46px'},
   {img : 'Javascript.png', text : 'Javascript', w : '80px', w2 : '46px'},
-  {img : 'typescript.png', text : 'Typyscript', w : '80px', w2 : '40px'},
+  {img : 'Typescript.png', text : 'Typescript', w : '80px', w2 : '40px'},
   {img : 'react-router.png', text : 'React Router', w : '121px', w2 : '60px'},
   {img : 'Redux.png', text : 'Redux', w : '80px', w2 : '40px'},
   {img : 'Chakra ui.png', text : 'Chakra UI', w : '80px', w2 : '40px'},
